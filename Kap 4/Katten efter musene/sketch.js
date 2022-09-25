@@ -231,7 +231,7 @@ function draw() {
 
   fill(0);
   rect(600, 0, width, height);
-  fill(255);
+  fill(250);
   textSize(20);
   text(s, 605, 295, 645, 595);
 }
