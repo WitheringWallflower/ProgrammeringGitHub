@@ -1,17 +1,18 @@
-let y; 
-let yspeed; 
+let y;
+let yspeed;
+let w = 50;
 
-function setup() { 
+function setup() {
   createCanvas(400, 400);
-  y = height/2
-    yspeed = -1; 
-} 
+  y = height / 2;
+  yspeed = -2;
+}
 
-function draw() { 
+function draw() {
   background(220);
-  if (y <= 25 || y >= 400-25) {
+  if (y <= w / 2 || y >= height - w / 2) {
     yspeed *= -1;
   }
-  ellipse(width/2, y, 50, 50); 
-  y+=yspeed; 
+  ellipse(width / 2, y, w, w);
+  y += yspeed;
 }

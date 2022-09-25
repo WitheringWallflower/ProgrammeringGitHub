@@ -1,18 +1,15 @@
-function setup() { 
-  createCanvas(600, 400);
-} 
-
-function draw() { 
-  background(220);
-  fill(255,0,0);
+function setup() {
+  createCanvas(500, 500);
+}
+let x = 250
+let y = x
+function draw() {
+  background(200,30,30,200);
   noStroke();
-  if (mouseX < width/3) {
-    rect(0, 0, width/3, height);
-  }
-  else if (mouseX <= width*2/3) {
-    rect(width/3, 0, width/3, height);
+  if(mouseX<=x){
+    circle(x,y,120);
   }
   else {
-    rect(width*2/3, 0, width/3, height);
+    rect(190,210,120,80)
   }
 }
